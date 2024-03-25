@@ -16,10 +16,14 @@ import java.awt.image.ImageObserver;
 */
 
 public abstract class SlideItem {
-	private int level = 0; // level of the slideitem
+	private int level; // level of the slideitem
 
 	public SlideItem(int lev) {
-		level = lev;
+		if (lev < 0) {
+			throw new IllegalArgumentException("level cant be less then zero");
+		} else {
+			level = lev;
+		}
 	}
 
 	public SlideItem() {
@@ -29,6 +33,14 @@ public abstract class SlideItem {
 // Give the level
 	public int getLevel() {
 		return level;
+	}
+
+	public void setLevel(int lev){
+		if(lev < 0){
+			throw new IllegalArgumentException("level cant be less then zero");
+		} else {
+			this.level = lev;
+		}
 	}
 
 // Give the bounding box

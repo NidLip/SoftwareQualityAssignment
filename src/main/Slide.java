@@ -20,9 +20,12 @@ public class Slide {
 	public final static int HEIGHT = 800;
 	protected String title; // title is saved separately
 	protected Vector<SlideItem> items; // slide items are saved in a Vector
-
+	protected SlideItemFactory factory;
+	
 	public Slide() {
 		items = new Vector<SlideItem>();
+		this.factory = new TextItemFactory();
+		
 	}
 
 	// Add a slide item
@@ -42,7 +45,8 @@ public class Slide {
 
 	// Create main.TextItem of String, and add the main.TextItem
 	public void append(int level, String message) {
-		append(new TextItem(level, message));
+		SlideItem item = factory.createTextItem(level, message);
+		items.addElement(item);
 	}
 
 	// give the  main.SlideItem

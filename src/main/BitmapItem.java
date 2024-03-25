@@ -51,6 +51,14 @@ public class BitmapItem extends SlideItem {
 		return imageName;
 	}
 
+	public void setName(String name){
+		this.imageName = name;
+	}
+
+	public void setLevel(int level){
+		
+	}
+
 // give the  bounding box of the image
 	public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale, Style myStyle) {
 		return new Rectangle((int) (myStyle.indent * scale), 0,
