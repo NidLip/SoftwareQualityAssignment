@@ -20,7 +20,7 @@ public abstract class SlideItem {
 
 	public SlideItem(int lev) {
 		if (lev < 0) {
-			throw new IllegalArgumentException("level cant be less then zero");
+			throw new IllegalArgumentException("level can not be less then zero");
 		} else {
 			level = lev;
 		}
@@ -37,7 +37,7 @@ public abstract class SlideItem {
 
 	public void setLevel(int lev){
 		if(lev < 0){
-			throw new IllegalArgumentException("level cant be less then zero");
+			throw new IllegalArgumentException("level can not be less then zero");
 		} else {
 			this.level = lev;
 		}

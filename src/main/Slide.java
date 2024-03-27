@@ -22,10 +22,15 @@ public class Slide {
 	protected Vector<SlideItem> items; // slide items are saved in a Vector
 	protected SlideItemFactory factory;
 	
-	public Slide() {
+	public Slide(String factoryType) {
 		items = new Vector<SlideItem>();
-		this.factory = new TextItemFactory();
-		
+		if(factoryType.equals("bitmap")){
+			this.factory = new BitmapItemFactory();
+		} else if (factoryType.equals("text")) {
+			this.factory = new TextItemFactory();
+		} else {
+			throw new IllegalArgumentException("Invalid factory type: " + factoryType);
+		}
 	}
 
 	// Add a slide item
@@ -45,7 +50,7 @@ public class Slide {
 
 	// Create main.TextItem of String, and add the main.TextItem
 	public void append(int level, String message) {
-		SlideItem item = factory.createTextItem(level, message);
+		SlideItem item = factory.createSlideItem(level, message);
 		items.addElement(item);
 	}
 
