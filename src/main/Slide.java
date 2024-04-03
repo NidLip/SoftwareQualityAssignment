@@ -20,9 +20,17 @@ public class Slide {
 	public final static int HEIGHT = 800;
 	protected String title; // title is saved separately
 	protected Vector<SlideItem> items; // slide items are saved in a Vector
-
-	public Slide() {
+	protected SlideItemFactory factory;
+	
+	public Slide(String factoryType) {
 		items = new Vector<SlideItem>();
+		if(factoryType.equals("bitmap")){
+			this.factory = new BitmapItemFactory();
+		} else if (factoryType.equals("text")) {
+			this.factory = new TextItemFactory();
+		} else {
+			throw new IllegalArgumentException("Invalid factory type: " + factoryType);
+		}
 	}
 
 	// Add a slide item
@@ -42,7 +50,8 @@ public class Slide {
 
 	// Create main.TextItem of String, and add the main.TextItem
 	public void append(int level, String message) {
-		append(new TextItem(level, message));
+		SlideItem item = factory.createSlideItem(level, message);
+		items.addElement(item);
 	}
 
 	// give the  main.SlideItem

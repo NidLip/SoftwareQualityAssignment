@@ -66,7 +66,8 @@ public class XMLAccessor extends Accessor {
 			max = slides.getLength();
 			for (slideNumber = 0; slideNumber < max; slideNumber++) {
 				Element xmlSlide = (Element) slides.item(slideNumber);
-				Slide slide = new Slide();
+				SlideItemFactory factory = new TextItemFactory();
+				Slide slide = new Slide("text");
 				slide.setTitle(getTitle(xmlSlide, SLIDETITLE));
 				presentation.append(slide);
 				
@@ -74,7 +75,7 @@ public class XMLAccessor extends Accessor {
 				maxItems = slideItems.getLength();
 				for (itemNumber = 0; itemNumber < maxItems; itemNumber++) {
 					Element item = (Element) slideItems.item(itemNumber);
-					loadSlideItem(slide, item);
+					loadSlideItem(slide, item, factory);
 				}
 			}
 		} 
@@ -89,7 +90,7 @@ public class XMLAccessor extends Accessor {
 		}	
 	}
 
-	protected void loadSlideItem(Slide slide, Element item) {
+	protected void loadSlideItem(Slide slide, Element item, SlideItemFactory factory) {
 		int level = 1; // default
 		NamedNodeMap attributes = item.getAttributes();
 		String leveltext = attributes.getNamedItem(LEVEL).getTextContent();
@@ -112,6 +113,13 @@ public class XMLAccessor extends Accessor {
 			else {
 				System.err.println(UNKNOWNTYPE);
 			}
+		}
+		if (TEXT.equals(type)) {
+			slide.append(factory.createSlideItem(level, item.getTextContent()));
+		} else if (IMAGE.equals(type)) {
+			slide.append(factory.createSlideItem(level, item.getTextContent()));
+		} else {
+			System.err.println(UNKNOWNTYPE);
 		}
 	}
 
