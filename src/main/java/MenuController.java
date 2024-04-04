@@ -46,25 +46,18 @@ public class MenuController extends MenuBar {
 	protected static final String SAVEERR = "Save Error";
 
 	public MenuController(Frame frame, Presentation pres) {
-		parent = frame;
-		presentation = pres;
-		MenuItem menuItem;
-		Menu fileMenu = new Menu(FILE);
-		fileMenu.add(menuItem = mkMenuItem(OPEN));
-		menuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent actionEvent) {
-				presentation.clear();
-				Accessor xmlAccessor = new XMLAccessor();
-				try {
-					xmlAccessor.loadFile(presentation, TESTFILE);
-					presentation.setSlideNumber(0);
-				} catch (IOException exc) {
-					JOptionPane.showMessageDialog(parent, IOEX + exc, 
-         			LOADERR, JOptionPane.ERROR_MESSAGE);
-				}
-				parent.repaint();
-			}
-		} );
+        parent = frame;
+        presentation = pres;
+        OpenCommand openCommand = new OpenCommand(presentation, parent);
+
+        MenuItem menuItem;
+        Menu fileMenu = new Menu(FILE);
+        fileMenu.add(menuItem = mkMenuItem(OPEN));
+        menuItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                openCommand.execute();
+            }
+        });
 		fileMenu.add(menuItem = mkMenuItem(NEW));
 		menuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
@@ -72,6 +65,7 @@ public class MenuController extends MenuBar {
 				parent.repaint();
 			}
 		});
+		
 		fileMenu.add(menuItem = mkMenuItem(SAVE));
 		menuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
