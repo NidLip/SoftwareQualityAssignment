@@ -3,6 +3,8 @@ import java.awt.Font;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.io.IOException;
+
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
@@ -18,7 +20,6 @@ import javax.swing.JFrame;
  */
 
 public class SlideViewerComponent extends JComponent {
-		
 	private Slide slide; // current slide
 	private Font labelFont = null; // font for labels
 	private Presentation presentation = null; // the presentation
@@ -51,7 +52,13 @@ public class SlideViewerComponent extends JComponent {
 			return;
 		}
 		this.presentation = presentation;
-		this.slide = data;
+		AnimationDecorator decorator = new AnimationDecorator(data);
+		try {
+			decorator.loadGif("/logo-woordmerk_ou.gif");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		this.slide = decorator;
 		repaint();
 		frame.setTitle(presentation.getTitle());
 	}
