@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="" />
+    <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/KeyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OpenCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AboutBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AboutBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Accessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BitmapItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BitmapItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BitmapItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BitmapItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/DemoPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DemoPresentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/JabberPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JabberPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/KeyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/NextSlideCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NextSlideCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/OpenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/PrevSlideCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrevSlideCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Slide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Slide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SlideItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SlideItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SlideItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SlideItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SlideViewerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SlideViewerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SlideViewerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SlideViewerFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Style.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TextItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TextItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TextItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TextItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XMLAccessor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +54,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2eYHr3Ngem6Rp2UCD5Y6O32DTnY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,24 +70,27 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/minochka/Projects/SoftwareQualityAssignment",
+    "git-widget-placeholder": "CommandAndDecoratorPatterns",
+    "last_opened_file_path": "C:/Users/anast/Desktop/softwareQuality/SoftwareQualityAssignment",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anast\Desktop\softwareQuality\SoftwareQualityAssignment\src\main\java" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -64,18 +100,10 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.XMLAccessorTest.testLoadSlideItem">
-    <configuration name="XMLAccessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.JabberPoint">
+    <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JabberPoint" />
       <module name="SoftwareQualityAssignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.XMLAccessorTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JabberPoint" />
         <item itemvalue="JUnit.XMLAccessorTest.testLoadSlideItem" />
         <item itemvalue="JUnit.XMLAccessorTest.testLoadFile_loadPresentationWithNoSlides_expectThrows" />
         <item itemvalue="JUnit.XMLAccessorTest.testLoadFile_loadPresentationWithNoSlides_" />
         <item itemvalue="JUnit.XMLAccessorTest.testLoadFile" />
-        <item itemvalue="JUnit.XMLAccessorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -165,10 +193,17 @@
       <workItem from="1712074791337" duration="1528000" />
       <workItem from="1712100565748" duration="2218000" />
       <workItem from="1712102839041" duration="7964000" />
+      <workItem from="1712181959444" duration="2744000" />
+      <workItem from="1712230542594" duration="913000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$XMLAccessorTest_testLoadSlideItem.ic" NAME="XMLAccessorTest.testLoadSlideItem Coverage Results" MODIFIED="1712182063207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>main.*</FILTER>
+    </SUITE>
   </component>
 </project>
