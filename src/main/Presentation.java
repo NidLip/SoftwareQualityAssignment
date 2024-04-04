@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 
 public class Presentation {
-	private String showTitle; // title of the presentation
+	private String title; // title of the presentation
 	private ArrayList<Slide> showList = null; // an ArrayList with Slides
 	private int currentSlideNumber = 0; // the slidenummer of the current main.Slide
 	private SlideViewerComponent slideViewComponent = null; // the viewcomponent of the Slides
@@ -36,11 +36,11 @@ public class Presentation {
 	}
 
 	public String getTitle() {
-		return showTitle;
+		return this.title;
 	}
 
-	public void setTitle(String nt) {
-		showTitle = nt;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public void setShowView(SlideViewerComponent slideViewerComponent) {
