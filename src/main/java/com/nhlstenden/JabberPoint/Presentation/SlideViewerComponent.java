@@ -99,7 +99,7 @@ public class SlideViewerComponent extends JComponent {
 		this.presentation = presentation;
 		AnimationDecorator decorator = new AnimationDecorator(data);
 		try {
-			decorator.loadGif("/logo-woordmerk_ou.gif");
+			decorator.loadGif("logo-woordmerk_ou.gif");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

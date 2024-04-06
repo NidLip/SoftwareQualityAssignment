@@ -2,10 +2,7 @@ package com.nhlstenden.JabberPoint.Slide;
 
 import com.nhlstenden.Style.Style;
 
-import java.awt.Rectangle;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
+import java.awt.*;
 import java.awt.font.TextLayout;
 import java.awt.font.TextAttribute;
 import java.awt.font.LineBreakMeasurer;
@@ -36,13 +33,13 @@ public class TextItem extends SlideItem {
 // a textitem of level level, with the text string
 	public TextItem(int level, String string) {
 		super(level);
-		text = string;
+		if (string == null || string.isEmpty()) {
+			text = EMPTYTEXT;
+		} else {
+			text = string;
+		}
 	}
 
-// an empty textitem
-	public TextItem() {
-		this(0, EMPTYTEXT);
-	}
 
 // give the text
 	public String getText() {
@@ -54,11 +51,19 @@ public class TextItem extends SlideItem {
 	}
 
 // geef de AttributedString voor het item
-	public AttributedString getAttributedString(Style style, float scale) {
-		AttributedString attrStr = new AttributedString(getText());
-		attrStr.addAttribute(TextAttribute.FONT, style.getFont(scale), 0, text.length());
-		return attrStr;
+public AttributedString getAttributedString(Style style, float scale) {
+	String textContent = getText(); // Get the text content, ensuring it's not null
+	int textLength = textContent.length(); // Calculate the length of the text content
+	AttributedString attrStr = new AttributedString(textContent); // Create AttributedString with text content
+
+	// Add font attribute only if text content is not null and has a positive length
+	if (textLength > 0) {
+		Font font = style.getFont(scale);
+		attrStr.addAttribute(TextAttribute.FONT, font, 0, textLength);
 	}
+
+	return attrStr;
+}
 
 // give the bounding box of the item
 	public Rectangle getBoundingBox(Graphics graphics, ImageObserver observer, float scale, Style myStyle)

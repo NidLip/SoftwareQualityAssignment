@@ -28,7 +28,7 @@ public class AnimationDecorator extends BaseDecorator {
     }
 
     public void loadGif(String gifFileName) throws IOException {
-        InputStream in = getClass().getResourceAsStream("/main.com.nhlstenden.JabberPoint.Resources/" + gifFileName);
+        InputStream in = getClass().getClassLoader().getResourceAsStream(gifFileName);
         if (in == null) {
             throw new FileNotFoundException("GIF file not found: " + gifFileName);
         }
