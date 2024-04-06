@@ -234,7 +234,7 @@ public class XMLAccessor extends Accessor {
     private void writeSlide(PrintWriter out, Slide slide) {
         out.println("<slide>");
         out.println("<title>" + slide.getTitle() + "</title>");
-        writeSlideItems(out, slide.getSlideItems());
+        writeSlideItems(out, slide.getAllSlideItems());
         out.println("</slide>");
     }
 
@@ -284,7 +284,7 @@ public class XMLAccessor extends Accessor {
 	// 		com.nhlstenden.JabberPoint.Slide.Slide slide = presentation.getSlide(slideNumber);
 	// 		out.println("<slide>");
 	// 		out.println("<title>" + slide.getTitle() + "</title>");
-	// 		Vector<com.nhlstenden.JabberPoint.Slide.SlideItem> slideItems = slide.getSlideItems();
+	// 		Vector<com.nhlstenden.JabberPoint.Slide.SlideItem> slideItems = slide.getAllSlideItems();
 	// 		for (int itemNumber = 0; itemNumber<slideItems.size(); itemNumber++) {
 	// 			com.nhlstenden.JabberPoint.Slide.SlideItem slideItem = (com.nhlstenden.JabberPoint.Slide.SlideItem) slideItems.elementAt(itemNumber);
 	// 			out.print("<item kind="); 

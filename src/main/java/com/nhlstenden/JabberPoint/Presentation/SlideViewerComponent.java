@@ -47,6 +47,46 @@ public class SlideViewerComponent extends JComponent {
 		this.frame = frame;
 	}
 
+	public Slide getSlide()
+	{
+		return slide;
+	}
+
+	public void setSlide(Slide slide)
+	{
+		this.slide = slide;
+	}
+
+	public Font getLabelFont()
+	{
+		return labelFont;
+	}
+
+	public void setLabelFont(Font labelFont)
+	{
+		this.labelFont = labelFont;
+	}
+
+	public Presentation getPresentation()
+	{
+		return presentation;
+	}
+
+	public void setPresentation(Presentation presentation)
+	{
+		this.presentation = presentation;
+	}
+
+	public JFrame getFrame()
+	{
+		return frame;
+	}
+
+	public void setFrame(JFrame frame)
+	{
+		this.frame = frame;
+	}
+
 	public Dimension getPreferredSize() {
 		return new Dimension(Slide.WIDTH, Slide.HEIGHT);
 	}
@@ -63,23 +103,23 @@ public class SlideViewerComponent extends JComponent {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		this.slide = decorator;
+		setSlide(decorator);
 		repaint();
-		frame.setTitle(presentation.getTitle());
+		getFrame().setTitle(presentation.getTitle());
 	}
 
 // draw the slide
 	public void paintComponent(Graphics g) {
 		g.setColor(BGCOLOR);
 		g.fillRect(0, 0, getSize().width, getSize().height);
-		if (presentation.getSlideNumber() < 0 || slide == null) {
+		if (getPresentation().getSlideNumber() < 0 || slide == null) {
 			return;
 		}
-		g.setFont(labelFont);
+		g.setFont(getLabelFont());
 		g.setColor(COLOR);
-		g.drawString("main.com.nhlstenden.JabberPoint.Slide.Slide " + (1 + presentation.getSlideNumber()) + " of " +
-                 presentation.getSize(), XPOS, YPOS);
+		g.drawString("main.com.nhlstenden.JabberPoint.Slide.Slide " + (1 + getPresentation().getSlideNumber()) + " of " +
+                 getPresentation().getSize(), XPOS, YPOS);
 		Rectangle area = new Rectangle(0, YPOS, getWidth(), (getHeight() - YPOS));
-		slide.draw(g, area, this);
+		getSlide().draw(g, area, this);
 	}
 }

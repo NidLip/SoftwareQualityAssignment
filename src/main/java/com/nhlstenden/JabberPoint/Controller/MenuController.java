@@ -45,27 +45,19 @@ public class MenuController extends MenuBar {
 	protected static final String PREV = "Prev";
 	protected static final String SAVE = "Save";
 	protected static final String VIEW = "View";
-	
-	protected static final String TESTFILE = "test.xml";
 	protected static final String SAVEFILE = "dump.xml";
-	
 	protected static final String IOEX = "IO Exception: ";
-	protected static final String LOADERR = "Load Error";
 	protected static final String SAVEERR = "Save Error";
 
-	public MenuController(Frame frame, Presentation pres) {
+	public MenuController(Frame frame, Presentation presentationObject) {
         parent = frame;
-        presentation = pres;
+        presentation = presentationObject;
         OpenCommand openCommand = new OpenCommand(presentation, parent);
 
         MenuItem menuItem;
         Menu fileMenu = new Menu(FILE);
         fileMenu.add(menuItem = mkMenuItem(OPEN));
-        menuItem.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent actionEvent) {
-                openCommand.execute();
-            }
-        });
+        menuItem.addActionListener(actionEvent -> openCommand.execute());
 		fileMenu.add(menuItem = mkMenuItem(NEW));
 		menuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
@@ -75,54 +67,36 @@ public class MenuController extends MenuBar {
 		});
 		
 		fileMenu.add(menuItem = mkMenuItem(SAVE));
-		menuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Accessor xmlAccessor = new XMLAccessor();
-				try {
-					xmlAccessor.saveFile(presentation, SAVEFILE);
-				} catch (IOException exc) {
-					JOptionPane.showMessageDialog(parent, IOEX + exc, 
-							SAVEERR, JOptionPane.ERROR_MESSAGE);
-				}
+		menuItem.addActionListener(actionEvent ->
+		{
+			Accessor xmlAccessor = new XMLAccessor();
+			try {
+				xmlAccessor.saveFile(presentation, SAVEFILE);
+			} catch (IOException exc) {
+				JOptionPane.showMessageDialog(parent, IOEX + exc,
+						SAVEERR, JOptionPane.ERROR_MESSAGE);
 			}
 		});
 		fileMenu.addSeparator();
 		fileMenu.add(menuItem = mkMenuItem(EXIT));
-		menuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent actionEvent) {
-				presentation.exit(0);
-			}
-		});
+		menuItem.addActionListener(actionEvent -> presentation.exit(0));
 		add(fileMenu);
 		Menu viewMenu = new Menu(VIEW);
 		viewMenu.add(menuItem = mkMenuItem(NEXT));
-		menuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent actionEvent) {
-				presentation.nextSlide();
-			}
-		});
+		menuItem.addActionListener(actionEvent -> presentation.nextSlide());
 		viewMenu.add(menuItem = mkMenuItem(PREV));
-		menuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent actionEvent) {
-				presentation.prevSlide();
-			}
-		});
+		menuItem.addActionListener(actionEvent -> presentation.prevSlide());
 		viewMenu.add(menuItem = mkMenuItem(GOTO));
-		menuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent actionEvent) {
-				String pageNumberStr = JOptionPane.showInputDialog((Object)PAGENR);
-				int pageNumber = Integer.parseInt(pageNumberStr);
-				presentation.setSlideNumber(pageNumber - 1);
-			}
+		menuItem.addActionListener(actionEvent ->
+		{
+			String pageNumberStr = JOptionPane.showInputDialog(PAGENR);
+			int pageNumber = Integer.parseInt(pageNumberStr);
+			presentation.setSlideNumber(pageNumber - 1);
 		});
 		add(viewMenu);
 		Menu helpMenu = new Menu(HELP);
 		helpMenu.add(menuItem = mkMenuItem(ABOUT));
-		menuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent actionEvent) {
-				AboutBox.show(parent);
-			}
-		});
+		menuItem.addActionListener(actionEvent -> AboutBox.show(parent));
 		setHelpMenu(helpMenu);		// needed for portability (Motif, etc.).
 	}
 

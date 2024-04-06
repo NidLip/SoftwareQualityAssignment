@@ -38,7 +38,7 @@ public class BitmapItem extends SlideItem {
 		try {
 			bufferedImage = ImageIO.read(new File(imageName));
 		}
-		catch (IOException e) {
+		catch (IOException exception) {
 			System.err.println(FILE + imageName + NOTFOUND) ;
 		}
 	}
@@ -48,7 +48,7 @@ public class BitmapItem extends SlideItem {
 		this(0, null);
 	}
 
-// give the filename of the image
+// getters and setters
 	public String getName() {
 		return imageName;
 	}
@@ -56,21 +56,31 @@ public class BitmapItem extends SlideItem {
 	public void setName(String name){
 		this.imageName = name;
 	}
-	
-// give the  bounding box of the image
+
+	public BufferedImage getBufferedImage()
+	{
+		return bufferedImage;
+	}
+
+	public void setBufferedImage(BufferedImage bufferedImage)
+	{
+		this.bufferedImage = bufferedImage;
+	}
+
+	// give the  bounding box of the image
 	public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale, Style myStyle) {
 		return new Rectangle((int) (myStyle.getIndent() * scale), 0,
-				(int) (bufferedImage.getWidth(observer) * scale),
+				(int) (getBufferedImage().getWidth(observer) * scale),
 				((int) (myStyle.getLeading() * scale)) +
-				(int) (bufferedImage.getHeight(observer) * scale));
+				(int) (getBufferedImage().getHeight(observer) * scale));
 	}
 
 // draw the image
 	public void draw(int x, int y, float scale, Graphics g, Style myStyle, ImageObserver observer) {
 		int width = x + (int) (myStyle.getIndent() * scale);
 		int height = y + (int) (myStyle.getLeading() * scale);
-		g.drawImage(bufferedImage, width, height,(int) (bufferedImage.getWidth(observer)*scale),
-                (int) (bufferedImage.getHeight(observer)*scale), observer);
+		g.drawImage(getBufferedImage(), width, height,(int) (getBufferedImage().getWidth(observer)*scale),
+                (int) (getBufferedImage().getHeight(observer)*scale), observer);
 	}
 
 	public String toString() {

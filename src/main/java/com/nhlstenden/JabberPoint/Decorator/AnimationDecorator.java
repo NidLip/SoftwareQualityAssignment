@@ -6,7 +6,9 @@ import java.awt.*;
 import javax.imageio.ImageIO;
 import java.awt.image.ImageObserver;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class AnimationDecorator extends BaseDecorator {
     private Image gifImage;
@@ -15,15 +17,29 @@ public class AnimationDecorator extends BaseDecorator {
         super(wrappe);
     }
 
-    public void loadGif(String gifFilePath) throws IOException {
-        gifImage = ImageIO.read(new File(gifFilePath));
+    public Image getGifImage()
+    {
+        return gifImage;
+    }
+
+    public void setGifImage(Image gifImage)
+    {
+        this.gifImage = gifImage;
+    }
+
+    public void loadGif(String gifFileName) throws IOException {
+        InputStream in = getClass().getResourceAsStream("/main.com.nhlstenden.JabberPoint.Resources/" + gifFileName);
+        if (in == null) {
+            throw new FileNotFoundException("GIF file not found: " + gifFileName);
+        }
+        gifImage = ImageIO.read(in);
     }
 
     @Override
-    public void draw(Graphics g, Rectangle area, ImageObserver observer) {
-        super.draw(g, area, observer);
-        if (gifImage != null) {
-            g.drawImage(gifImage, area.x, area.y, observer);
+    public void draw(Graphics graphics, Rectangle area, ImageObserver observer) {
+        super.draw(graphics, area, observer);
+        if (getGifImage() != null) {
+            graphics.drawImage(getGifImage(), area.x, area.y, observer);
         }
     }
 }

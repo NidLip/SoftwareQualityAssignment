@@ -56,9 +56,8 @@ public class Style {
 		this.color = color;
 	}
 
-	public Font getFont()
-	{
-		return font;
+	public Font getFont(float scale) {
+		return font.deriveFont(fontSize * scale);
 	}
 
 	public void setFont(Font font)
@@ -104,7 +103,4 @@ public class Style {
 		return "["+ indent + "," + color + "; " + fontSize + " on " + leading +"]";
 	}
 
-	public Font getFont(float scale) {
-		return font.deriveFont(fontSize * scale);
-	}
 }

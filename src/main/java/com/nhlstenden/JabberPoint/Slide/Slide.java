@@ -28,7 +28,7 @@ public class Slide {
 	protected SlideItemFactory factory;
 	
 	public Slide(String factoryType) {
-		items = new Vector<SlideItem>();
+		items = new Vector<>();
 		if(factoryType.equals("bitmap")){
 			this.factory = new BitmapItemFactory();
 		} else if (factoryType.equals("text")) {
@@ -65,7 +65,7 @@ public class Slide {
 	}
 
 	// give all SlideItems in a Vector
-	public Vector<SlideItem> getSlideItems() {
+	public Vector<SlideItem> getAllSlideItems() {
 		return items;
 	}
 
@@ -75,21 +75,28 @@ public class Slide {
 	}
 
 	// draw the slide
-	public void draw(Graphics g, Rectangle area, ImageObserver view) {
-		float scale = getScale(area);
-	    int y = area.y;
-	// Title is handled separately
-	    SlideItem slideItem = new TextItem(0, getTitle());
-	    Style style = Style.getStyle(slideItem.getLevel());
-	    slideItem.draw(area.x, y, scale, g, style, view);
-	    y += slideItem.getBoundingBox(g, view, scale, style).height;
-	    for (int number=0; number<getSize(); number++) {
-	      slideItem = (SlideItem)getSlideItems().elementAt(number);
-	      style = Style.getStyle(slideItem.getLevel());
-	      slideItem.draw(area.x, y, scale, g, style, view);
-	      y += slideItem.getBoundingBox(g, view, scale, style).height;
-	    }
-	  }
+	public void draw(Graphics graphics, Rectangle area, ImageObserver view) {
+        float scale = getScale(area);
+        int y = area.y;
+        drawTitle(graphics, area, view, scale, y);
+        drawSlideItems(graphics, area, view, scale, y);
+    }
+
+	private void drawTitle(Graphics graphics, Rectangle area, ImageObserver view, float scale, int y) {
+        SlideItem slideItem = new TextItem(0, getTitle());
+        Style style = Style.getStyle(slideItem.getLevel());
+        slideItem.draw(area.x, y, scale, graphics, style, view);
+        y += slideItem.getBoundingBox(graphics, view, scale, style).height;
+    }
+
+    private void drawSlideItems(Graphics graphics, Rectangle area, ImageObserver view, float scale, int y) {
+        for (int number=0; number<getSize(); number++) {
+            SlideItem slideItem = (SlideItem) getAllSlideItems().elementAt(number);
+            Style style = Style.getStyle(slideItem.getLevel());
+            slideItem.draw(area.x, y, scale, graphics, style, view);
+            y += slideItem.getBoundingBox(graphics, view, scale, style).height;
+        }
+    }
 
 	// Give the scale for drawing
 	private float getScale(Rectangle area) {
