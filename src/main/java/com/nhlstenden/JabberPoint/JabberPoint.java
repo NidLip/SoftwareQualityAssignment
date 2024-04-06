@@ -1,8 +1,16 @@
+package com.nhlstenden.JabberPoint;
+
+import com.nhlstenden.JabberPoint.Presentation.SlideViewerFrame;
+import com.nhlstenden.JabberPoint.Accessor.Accessor;
+import com.nhlstenden.JabberPoint.Accessor.XMLAccessor;
+import com.nhlstenden.JabberPoint.Presentation.Presentation;
+import com.nhlstenden.Style.Style;
+
 import javax.swing.JOptionPane;
 
 import java.io.IOException;
 
-/** main.JabberPoint Main Programma
+/** main.com.nhlstenden.JabberPoint.JabberPoint Main Programma
  * <p>This program is distributed under the terms of the accompanying
  * COPYRIGHT.txt file (which is NOT the GNU General Public License).
  * Please read it. Your use of the software constitutes acceptance

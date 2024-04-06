@@ -1,9 +1,11 @@
+package com.nhlstenden.Style;
+
 import java.awt.Color;
 import java.awt.Font;
 
-/** <p>main.Style is for Indent, Color, Font and Leading.</p>
+/** <p>main.com.nhlstenden.Style.Style is for Indent, Color, Font and Leading.</p>
  * <p>Direct relation between style-number and item-level:
- * in main.Slide style if fetched for an item
+ * in main.com.nhlstenden.JabberPoint.Slide.Slide style if fetched for an item
  * with style-number as item-level.</p>
  * @author Ian F. Darwin, ian@darwinsys.com, Gert Florijn, Sylvia Stuurman
  * @version 1.1 2002/12/17 Gert Florijn
@@ -18,11 +20,11 @@ public class Style {
 	private static Style[] styles; // de styles
 	
 	private static final String FONTNAME = "Helvetica";
-	int indent;
-	Color color;
-	Font font;
-	int fontSize;
-	int leading;
+	private int indent;
+	private Color color;
+	private Font font;
+	private int fontSize;
+	private int leading;
 
 	public static void createStyles() {
 		styles = new Style[5];    
@@ -32,6 +34,56 @@ public class Style {
 		styles[2] = new Style(50, Color.black, 36, 10);	// style for item-level 2
 		styles[3] = new Style(70, Color.black, 30, 10);	// style for item-level 3
 		styles[4] = new Style(90, Color.black, 24, 10);	// style for item-level 4
+	}
+
+	public int getIndent()
+	{
+		return indent;
+	}
+
+	public void setIndent(int indent)
+	{
+		this.indent = indent;
+	}
+
+	public Color getColor()
+	{
+		return color;
+	}
+
+	public void setColor(Color color)
+	{
+		this.color = color;
+	}
+
+	public Font getFont()
+	{
+		return font;
+	}
+
+	public void setFont(Font font)
+	{
+		this.font = font;
+	}
+
+	public int getFontSize()
+	{
+		return fontSize;
+	}
+
+	public void setFontSize(int fontSize)
+	{
+		this.fontSize = fontSize;
+	}
+
+	public int getLeading()
+	{
+		return leading;
+	}
+
+	public void setLeading(int leading)
+	{
+		this.leading = leading;
 	}
 
 	public static Style getStyle(int level) {

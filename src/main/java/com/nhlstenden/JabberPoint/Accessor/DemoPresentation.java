@@ -1,3 +1,9 @@
+package com.nhlstenden.JabberPoint.Accessor;
+
+import com.nhlstenden.JabberPoint.Presentation.Presentation;
+import com.nhlstenden.JabberPoint.Slide.BitmapItem;
+import com.nhlstenden.JabberPoint.Slide.Slide;
+
 /** A built in demo-presentation
  * @author Ian F. Darwin, ian@darwinsys.com, Gert Florijn, Sylvia Stuurman
  * @version 1.1 2002/12/17 Gert Florijn
@@ -8,18 +14,19 @@
  * @version 1.6 2014/05/16 Sylvia Stuurman
  */
 
-class DemoPresentation extends Accessor {
+class DemoPresentation extends Accessor
+{
 
 	public void loadFile(Presentation presentation, String unusedFilename) {
-		presentation.setTitle("Demo main.Presentation");
+		presentation.setTitle("Demo main.com.nhlstenden.JabberPoint.Presentation.Presentation");
 		Slide slide;
 		slide = new Slide("text");
-		slide.setTitle("main.JabberPoint");
-		slide.append(1, "The Java main.Presentation Tool");
+		slide.setTitle("main.com.nhlstenden.JabberPoint.JabberPoint");
+		slide.append(1, "The Java main.com.nhlstenden.JabberPoint.Presentation.Presentation Tool");
 		slide.append(2, "Copyright (c) 1996-2000: Ian Darwin");
 		slide.append(2, "Copyright (c) 2000-now:");
 		slide.append(2, "Gert Florijn andn Sylvia Stuurman");
-		slide.append(4, "Starting main.JabberPoint without a filename");
+		slide.append(4, "Starting main.com.nhlstenden.JabberPoint.JabberPoint without a filename");
 		slide.append(4, "shows this presentation");
 		slide.append(1, "Navigate:");
 		slide.append(3, "Next slide: PgDn or Enter");
@@ -44,7 +51,7 @@ class DemoPresentation extends Accessor {
 		slide.append(2, "use File->Open from the menu.");
 		slide.append(1, " ");
 		slide.append(1, "This is the end of the presentation.");
-		slide.append(new BitmapItem(1, "main.JabberPoint.jpg"));
+		slide.append(new BitmapItem(1, "main.com.nhlstenden.JabberPoint.JabberPoint.jpg"));
 		presentation.append(slide);
 	}
 

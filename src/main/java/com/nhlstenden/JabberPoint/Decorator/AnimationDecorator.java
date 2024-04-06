@@ -1,3 +1,7 @@
+package com.nhlstenden.JabberPoint.Decorator;
+
+import com.nhlstenden.JabberPoint.Slide.Slide;
+
 import java.awt.*;
 import javax.imageio.ImageIO;
 import java.awt.image.ImageObserver;

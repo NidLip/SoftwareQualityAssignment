@@ -1,3 +1,8 @@
+package com.nhlstenden.JabberPoint.Factory;
+
+import com.nhlstenden.JabberPoint.Slide.SlideItem;
+import com.nhlstenden.JabberPoint.Slide.TextItem;
+
 public class TextItemFactory implements SlideItemFactory {
     @Override
     public SlideItem createSlideItem(int level, String text) {

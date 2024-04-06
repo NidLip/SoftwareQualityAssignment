@@ -1,8 +1,12 @@
+package com.nhlstenden.JabberPoint.Presentation;
+
+import com.nhlstenden.JabberPoint.Slide.Slide;
+
 import java.util.ArrayList;
 
 
 /**
- * <p>main.Presentation maintains the slides in the presentation.</p>
+ * <p>main.com.nhlstenden.JabberPoint.Presentation.Presentation maintains the slides in the presentation.</p>
  * <p>There is only instance of this class.</p>
  * @author Ian F. Darwin, ian@darwinsys.com, Gert Florijn, Sylvia Stuurman
  * @version 1.1 2002/12/17 Gert Florijn
@@ -16,7 +20,7 @@ import java.util.ArrayList;
 public class Presentation {
 	private String title; // title of the presentation
 	private ArrayList<Slide> showList = null; // an ArrayList with Slides
-	private int currentSlideNumber = 0; // the slidenummer of the current main.Slide
+	private int currentSlideNumber = 0; // the slidenummer of the current main.com.nhlstenden.JabberPoint.Slide.Slide
 	private SlideViewerComponent slideViewComponent = null; // the viewcomponent of the Slides
 
 	public Presentation() {
@@ -73,7 +77,7 @@ public class Presentation {
 	}
 
 	// Delete the presentation to be ready for the next one.
-	void clear() {
+	public void clear() {
 		showList = new ArrayList<Slide>();
 		setSlideNumber(-1);
 	}

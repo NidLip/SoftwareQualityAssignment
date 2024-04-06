@@ -1,3 +1,10 @@
+package com.nhlstenden.JabberPoint.Slide;
+
+import com.nhlstenden.JabberPoint.Factory.BitmapItemFactory;
+import com.nhlstenden.JabberPoint.Factory.SlideItemFactory;
+import com.nhlstenden.JabberPoint.Factory.TextItemFactory;
+import com.nhlstenden.Style.Style;
+
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.image.ImageObserver;
@@ -46,13 +53,13 @@ public class Slide {
 		title = newTitle;
 	}
 
-	// Create main.TextItem of String, and add the main.TextItem
+	// Create main.com.nhlstenden.JabberPoint.Slide.TextItem of String, and add the main.com.nhlstenden.JabberPoint.Slide.TextItem
 	public void append(int level, String message) {
 		SlideItem item = factory.createSlideItem(level, message);
 		items.addElement(item);
 	}
 
-	// give the  main.SlideItem
+	// give the  main.com.nhlstenden.JabberPoint.Slide.SlideItem
 	public SlideItem getSlideItem(int number) {
 		return (SlideItem)items.elementAt(number);
 	}
@@ -62,7 +69,7 @@ public class Slide {
 		return items;
 	}
 
-	// give the size of the main.Slide
+	// give the size of the main.com.nhlstenden.JabberPoint.Slide.Slide
 	public int getSize() {
 		return items.size();
 	}

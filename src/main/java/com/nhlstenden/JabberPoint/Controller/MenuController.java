@@ -1,3 +1,11 @@
+package com.nhlstenden.JabberPoint.Controller;
+
+import com.nhlstenden.JabberPoint.Accessor.Accessor;
+import com.nhlstenden.JabberPoint.Command.OpenCommand;
+import com.nhlstenden.JabberPoint.Presentation.AboutBox;
+import com.nhlstenden.JabberPoint.Presentation.Presentation;
+import com.nhlstenden.JabberPoint.Accessor.XMLAccessor;
+
 import java.awt.MenuBar;
 import java.awt.Frame;
 import java.awt.Menu;

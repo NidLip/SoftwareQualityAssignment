@@ -5,8 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/JabberPoint.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/BaseDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jabberpoint.dtd" beforeDir="false" afterPath="$PROJECT_DIR$/jabberpoint.dtd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AboutBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/AboutBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Accessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/Accessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AnimationDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/AnimationDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BaseDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BitmapItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/BitmapItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BitmapItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DemoPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/DemoPresentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JabberPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KeyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Controller/KeyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NextSlideCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Command/NextSlideCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OpenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Command/OpenCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/Presentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrevSlideCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Command/PrevSlideCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Slide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SlideItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/SlideItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SlideItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/SlideItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SlideViewerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SlideViewerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/Style/Style.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TextItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/TextItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TextItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/TextItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VideoDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/VideoDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/main/XMLAccessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/main/XMLAccessorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +107,8 @@
   </component>
   <component name="RunManager" selected="Application.JabberPoint">
     <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JabberPoint" />
-      <module name="SoftwareQualityAssignment" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.main.JabberPoint" />
+      <module name="JabberPoint" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,6 +201,8 @@
       <workItem from="1712181959444" duration="2744000" />
       <workItem from="1712230542594" duration="913000" />
       <workItem from="1712232820632" duration="71000" />
+      <workItem from="1712232895360" duration="8703000" />
+      <workItem from="1712404424383" duration="2722000" />
     </task>
     <servers />
   </component>
