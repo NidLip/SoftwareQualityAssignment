@@ -21,10 +21,10 @@ public class Presentation {
 	private String title; // title of the presentation
 	private ArrayList<Slide> showList = null; // an ArrayList with Slides
 	private int currentSlideNumber = 0; // the slidenummer of the current main.com.nhlstenden.JabberPoint.Slide.Slide
-	private SlideViewerComponent slideViewComponent = null; // the viewcomponent of the Slides
+	private SlideViewerComponent slideViewComponent; // the viewcomponent of the Slides
 
 	public Presentation() {
-		slideViewComponent = null;
+		this.slideViewComponent = null;
 		clear();
 	}
 
@@ -45,21 +45,27 @@ public class Presentation {
 		this.title = title;
 	}
 
-	public void setShowView(SlideViewerComponent slideViewerComponent) {
-		this.slideViewComponent = slideViewerComponent;
-	}
-
 	// give the number of the current slide
 	public int getSlideNumber() {
-		return currentSlideNumber;
+		return this.currentSlideNumber;
 	}
 
 	// change the current slide number and signal it to the window
 	public void setSlideNumber(int number) {
-		currentSlideNumber = number;
+		this.currentSlideNumber = number;
 		if (slideViewComponent != null) {
 			slideViewComponent.update(this, getCurrentSlide());
 		}
+	}
+
+	public SlideViewerComponent getSlideViewComponent()
+	{
+		return this.slideViewComponent;
+	}
+
+	public void setSlideViewComponent(SlideViewerComponent slideViewComponent)
+	{
+		this.slideViewComponent = slideViewComponent;
 	}
 
 	// go to the previous slide unless your at the beginning of the presentation

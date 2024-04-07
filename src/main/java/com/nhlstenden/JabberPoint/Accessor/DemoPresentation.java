@@ -4,6 +4,8 @@ import com.nhlstenden.JabberPoint.Presentation.Presentation;
 import com.nhlstenden.JabberPoint.Slide.BitmapItem;
 import com.nhlstenden.JabberPoint.Slide.Slide;
 
+import java.io.FileNotFoundException;
+
 /** A built in demo-presentation
  * @author Ian F. Darwin, ian@darwinsys.com, Gert Florijn, Sylvia Stuurman
  * @version 1.1 2002/12/17 Gert Florijn
@@ -17,7 +19,8 @@ import com.nhlstenden.JabberPoint.Slide.Slide;
 class DemoPresentation extends Accessor
 {
 
-	public void loadFile(Presentation presentation, String unusedFilename) {
+	public void loadFile(Presentation presentation, String unusedFilename) throws FileNotFoundException
+	{
 		presentation.setTitle("Demo Presentation");
 		Slide slide;
 		slide = new Slide("text");

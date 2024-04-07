@@ -9,28 +9,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/XMLAccessorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Slide/BitmapItemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Slide/TextItemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nhlstenden/JabberPoint/Decorator/AnimationDecorator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nhlstenden/JabberPoint/Decorator/BaseDecorator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nhlstenden/JabberPoint/Decorator/VideoDecorator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nhlstenden/JabberPoint/Decorator/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nhlstenden/JabberPoint/Decorator/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/Accessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/Accessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/DemoPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/DemoPresentation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/AnimationDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/BaseDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/VideoDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Command/OpenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Command/OpenCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Controller/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/SlideItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/SlideItemFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/TextItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/TextItemFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Resources/JabberPoint.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Resources/logo-woordmerk_ou.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/Presentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/BitmapItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/BitmapItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/SlideItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/SlideItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/TextItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/TextItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/XMLAccessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Accessors/XMLAccessorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,32 +53,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "mainRefactor",
-    "last_opened_file_path": "C:/Users/anast/Desktop/softwareQuality/SoftwareQualityAssignment/src/main/java/com/nhlstenden/JabberPoint/Resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;mainRefactor&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/anast/Desktop/softwareQuality/SoftwareQualityAssignment/src/main/java/com/nhlstenden/JabberPoint/Resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\anast\Desktop\softwareQuality\SoftwareQualityAssignment\src\main\java\com\nhlstenden\JabberPoint\Resources" />
@@ -100,11 +94,12 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.nhlstenden.JabberPoint.Slide" />
       <recent name="main" />
     </key>
   </component>
   <component name="RunManager" selected="Application.JabberPoint">
-    <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true">
+    <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.JabberPoint" />
@@ -119,70 +114,92 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMLAccessorTest.testLoadFile_loadPresentationWithNoSlides_expectThrows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareQualityAssignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.XMLAccessorTest" />
-      <option name="METHOD_NAME" value="testLoadFile_loadPresentationWithNoSlides_expectThrows" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="XMLAccessorTest.testLoadSlideItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareQualityAssignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.XMLAccessorTest" />
-      <option name="METHOD_NAME" value="testLoadSlideItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.nhlstenden.JabberPoint.Accessor.* and 7 more" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BitmapItemTest.testBitmapItem_CompareImage_Invalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JabberPoint" />
-      <option name="TEST_OBJECT" value="PATTERN" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="com.nhlstenden.JabberPoint.Accessor.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Command.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Controller.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Decorator.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Factory.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Presentation.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Resources.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Slide.*" />
-      </patterns>
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Slide.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
+      <option name="PACKAGE_NAME" value="Slide" />
+      <option name="MAIN_CLASS_NAME" value="Slide.BitmapItemTest" />
+      <option name="METHOD_NAME" value="testBitmapItem_CompareImage_Invalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BitmapItemTest.testBitmapItem_CompareImage_ThrowsFileNotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JabberPoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Slide.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
+      <option name="PACKAGE_NAME" value="Slide" />
+      <option name="MAIN_CLASS_NAME" value="Slide.BitmapItemTest" />
+      <option name="METHOD_NAME" value="testBitmapItem_CompareImage_ThrowsFileNotFoundException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuControllerTest.MenuController_withoutShortCut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JabberPoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.MenuControllerTest" />
+      <option name="METHOD_NAME" value="MenuController_withoutShortCut" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextItemTest.testTextItem_compareLevelAndText_ThrowsIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JabberPoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Slide.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
+      <option name="PACKAGE_NAME" value="Slide" />
+      <option name="MAIN_CLASS_NAME" value="Slide.TextItemTest" />
+      <option name="METHOD_NAME" value="testTextItem_compareLevelAndText_ThrowsIllegalArgumentException" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.JabberPoint" />
-      <item itemvalue="JUnit.XMLAccessorTest.testLoadFile_loadPresentationWithNoSlides_expectThrows" />
-      <item itemvalue="JUnit.XMLAccessorTest.testLoadSlideItem" />
-      <item itemvalue="TestNG.com.nhlstenden.JabberPoint.Accessor.* and 7 more" />
+      <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_ThrowsFileNotFoundException" />
+      <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_Invalid" />
+      <item itemvalue="JUnit.MenuControllerTest.MenuController_withoutShortCut" />
+      <item itemvalue="JUnit.TextItemTest.testTextItem_compareLevelAndText_ThrowsIllegalArgumentException" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.JabberPoint" />
-        <item itemvalue="Application.JabberPoint" />
-        <item itemvalue="TestNG.com.nhlstenden.JabberPoint.Accessor.* and 7 more" />
-        <item itemvalue="JUnit.XMLAccessorTest.testLoadSlideItem" />
-        <item itemvalue="JUnit.XMLAccessorTest.testLoadFile_loadPresentationWithNoSlides_expectThrows" />
+        <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_ThrowsFileNotFoundException" />
+        <item itemvalue="JUnit.MenuControllerTest.MenuController_withoutShortCut" />
+        <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_Invalid" />
+        <item itemvalue="JUnit.TextItemTest.testTextItem_compareLevelAndText_ThrowsIllegalArgumentException" />
       </list>
     </recent_temporary>
   </component>
@@ -207,22 +224,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$XMLAccessorTest_testLoadSlideItem.ic" NAME="XMLAccessorTest.testLoadSlideItem Coverage Results" MODIFIED="1712182063207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -28,13 +28,11 @@ public class Slide {
 	protected SlideItemFactory factory;
 	
 	public Slide(String factoryType) {
-		items = new Vector<>();
+		this.items = new Vector<>();
 		if(factoryType.equals("bitmap")){
 			this.factory = new BitmapItemFactory();
 		} else if (factoryType.equals("text")) {
 			this.factory = new TextItemFactory();
-		} else if(factoryType.equals("gif")){
-			this.factory = new BitmapItemFactory();
 		} else {
 			throw new IllegalArgumentException("Invalid factory type: " + factoryType);
 		}
@@ -47,12 +45,12 @@ public class Slide {
 
 	// give the title of the slide
 	public String getTitle() {
-		return title;
+		return this.title;
 	}
 
 	// change the title of the slide
 	public void setTitle(String newTitle) {
-		title = newTitle;
+		this.title = newTitle;
 	}
 
 	// Create main.com.nhlstenden.JabberPoint.Slide.TextItem of String, and add the main.com.nhlstenden.JabberPoint.Slide.TextItem
@@ -68,7 +66,7 @@ public class Slide {
 
 	// give all SlideItems in a Vector
 	public Vector<SlideItem> getAllSlideItems() {
-		return items;
+		return this.items;
 	}
 
 	// give the size of the main.com.nhlstenden.JabberPoint.Slide.Slide
