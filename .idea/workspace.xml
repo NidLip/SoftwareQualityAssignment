@@ -9,17 +9,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Resources/logo-woordmerk_ou.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/JabberPoint.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logo-woordmerk_ou.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/XMLAccessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nhlstenden/JabberPoint/Decorator/AnimationDecorator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nhlstenden/JabberPoint/Decorator/BaseDecorator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nhlstenden/JabberPoint/Decorator/VideoDecorator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nhlstenden/JabberPoint/Decorator/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nhlstenden/JabberPoint/Decorator/package-tree.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/DemoPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/DemoPresentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/AnimationDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/AnimationDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/AnimationDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/BaseDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Decorator/VideoDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/SlideItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/SlideItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/TextItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/TextItemFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/TextItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/TextItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/Resources/JabberPoint.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/main/XMLAccessorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Resources/JabberPoint.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Resources/logo-woordmerk_ou.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/BitmapItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/BitmapItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,16 +103,9 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.com.nhlstenden.JabberPoint.Accessor.* and 7 more">
-    <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.main.JabberPoint" />
-      <module name="JabberPoint" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.nhlstenden.JabberPoint.JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
+  <component name="RunManager" selected="Application.JabberPoint">
+    <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.JabberPoint" />
       <module name="JabberPoint" />
@@ -167,7 +171,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.com.nhlstenden.JabberPoint.JabberPoint" />
       <item itemvalue="Application.JabberPoint" />
       <item itemvalue="JUnit.XMLAccessorTest.testLoadFile_loadPresentationWithNoSlides_expectThrows" />
       <item itemvalue="JUnit.XMLAccessorTest.testLoadSlideItem" />
@@ -175,9 +178,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.com.nhlstenden.JabberPoint.Accessor.* and 7 more" />
-        <item itemvalue="Application.com.nhlstenden.JabberPoint.JabberPoint" />
         <item itemvalue="Application.JabberPoint" />
+        <item itemvalue="Application.JabberPoint" />
+        <item itemvalue="TestNG.com.nhlstenden.JabberPoint.Accessor.* and 7 more" />
         <item itemvalue="JUnit.XMLAccessorTest.testLoadSlideItem" />
         <item itemvalue="JUnit.XMLAccessorTest.testLoadFile_loadPresentationWithNoSlides_expectThrows" />
       </list>
@@ -212,6 +215,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java</url>
           <line>26</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -172,9 +172,9 @@ public class XMLAccessor extends Accessor {
 		String type = parseType(item);
 	
 		if (TEXT.equals(type)) {
-			slide.append(new TextItem(level, item.getTextContent()));
+			slide.append(factory.createTextItem(level, item.getTextContent()));
 		} else if (IMAGE.equals(type)) {
-			slide.append(new BitmapItem(level, item.getTextContent()));
+			slide.append(factory.createBitmapItem(level, item.getTextContent()));
 		} else {
 			System.err.println(UNKNOWNTYPE);
 		}

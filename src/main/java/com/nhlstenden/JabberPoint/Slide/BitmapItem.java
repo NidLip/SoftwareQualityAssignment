@@ -6,11 +6,12 @@ import java.awt.Rectangle;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
-import java.io.File;
 
 import javax.imageio.ImageIO;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 
 
 /** <p>De klasse voor een Bitmap item</p>
@@ -36,10 +37,14 @@ public class BitmapItem extends SlideItem {
 		super(level);
 		imageName = name;
 		try {
-			bufferedImage = ImageIO.read(new File(imageName));
-		}
-		catch (IOException exception) {
-			System.err.println(FILE + imageName + NOTFOUND) ;
+			InputStream in = getClass().getClassLoader().getResourceAsStream(imageName);
+			if (in == null) {
+				throw new FileNotFoundException("Image file not found: " + imageName);
+			}
+			bufferedImage = ImageIO.read(in);
+		} catch (IOException exception) {
+			System.err.println(FILE + imageName + NOTFOUND);
+			exception.printStackTrace();
 		}
 	}
 
@@ -84,6 +89,6 @@ public class BitmapItem extends SlideItem {
 	}
 
 	public String toString() {
-		return "main.com.nhlstenden.JabberPoint.Slide.BitmapItem[" + getLevel() + "," + imageName + "]";
+		return "BitmapItem[" + getLevel() + "," + imageName + "]";
 	}
 }

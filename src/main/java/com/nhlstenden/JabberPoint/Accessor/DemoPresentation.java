@@ -18,15 +18,15 @@ class DemoPresentation extends Accessor
 {
 
 	public void loadFile(Presentation presentation, String unusedFilename) {
-		presentation.setTitle("Demo main.com.nhlstenden.JabberPoint.Presentation.Presentation");
+		presentation.setTitle("Demo Presentation");
 		Slide slide;
 		slide = new Slide("text");
-		slide.setTitle("main.com.nhlstenden.JabberPoint.JabberPoint");
-		slide.append(1, "The Java main.com.nhlstenden.JabberPoint.Presentation.Presentation Tool");
+		slide.setTitle("JabberPoint");
+		slide.append(1, "The Java Presentation Tool");
 		slide.append(2, "Copyright (c) 1996-2000: Ian Darwin");
 		slide.append(2, "Copyright (c) 2000-now:");
 		slide.append(2, "Gert Florijn andn Sylvia Stuurman");
-		slide.append(4, "Starting main.com.nhlstenden.JabberPoint.JabberPoint without a filename");
+		slide.append(4, "Starting JabberPoint without a filename");
 		slide.append(4, "shows this presentation");
 		slide.append(1, "Navigate:");
 		slide.append(3, "Next slide: PgDn or Enter");
@@ -51,7 +51,8 @@ class DemoPresentation extends Accessor
 		slide.append(2, "use File->Open from the menu.");
 		slide.append(1, " ");
 		slide.append(1, "This is the end of the presentation.");
-		slide.append(new BitmapItem(0, "/JabberPoint.jpg"));
+		slide.append(new BitmapItem(0, "JabberPoint.jpg"));
+		slide.append(new BitmapItem(0, "logo-woordmerk_ou.gif"));
 		presentation.append(slide);
 	}
 

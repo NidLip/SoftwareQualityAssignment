@@ -5,7 +5,11 @@ import com.nhlstenden.JabberPoint.Slide.SlideItem;
 
 public class BitmapItemFactory implements SlideItemFactory {
     @Override
-    public SlideItem createSlideItem(int level, String text) {
-        return new BitmapItem(level,"example.jpg");
+    public SlideItem createBitmapItem(int level, String text) {
+        return new BitmapItem(level, text);
+    }
+    @Override
+    public SlideItem createTextItem(int level, String text) {
+        throw new UnsupportedOperationException("BitmapItemFactory can't create TextItem");
     }
 }

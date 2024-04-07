@@ -33,6 +33,8 @@ public class Slide {
 			this.factory = new BitmapItemFactory();
 		} else if (factoryType.equals("text")) {
 			this.factory = new TextItemFactory();
+		} else if(factoryType.equals("gif")){
+			this.factory = new BitmapItemFactory();
 		} else {
 			throw new IllegalArgumentException("Invalid factory type: " + factoryType);
 		}
@@ -55,7 +57,7 @@ public class Slide {
 
 	// Create main.com.nhlstenden.JabberPoint.Slide.TextItem of String, and add the main.com.nhlstenden.JabberPoint.Slide.TextItem
 	public void append(int level, String message) {
-		SlideItem item = factory.createSlideItem(level, message);
+		SlideItem item = factory.createTextItem(level, message);
 		items.addElement(item);
 	}
 
@@ -78,15 +80,16 @@ public class Slide {
 	public void draw(Graphics graphics, Rectangle area, ImageObserver view) {
         float scale = getScale(area);
         int y = area.y;
-        drawTitle(graphics, area, view, scale, y);
+        y += drawTitle(graphics, area, view, scale, y);
         drawSlideItems(graphics, area, view, scale, y);
     }
 
-	private void drawTitle(Graphics graphics, Rectangle area, ImageObserver view, float scale, int y) {
+	private int drawTitle(Graphics graphics, Rectangle area, ImageObserver view, float scale, int y) {
         SlideItem slideItem = new TextItem(0, getTitle());
         Style style = Style.getStyle(slideItem.getLevel());
         slideItem.draw(area.x, y, scale, graphics, style, view);
         y += slideItem.getBoundingBox(graphics, view, scale, style).height;
+		return y;
     }
 
     private void drawSlideItems(Graphics graphics, Rectangle area, ImageObserver view, float scale, int y) {

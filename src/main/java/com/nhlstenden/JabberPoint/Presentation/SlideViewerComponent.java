@@ -1,6 +1,5 @@
 package com.nhlstenden.JabberPoint.Presentation;
 
-import com.nhlstenden.JabberPoint.Decorator.AnimationDecorator;
 import com.nhlstenden.JabberPoint.Slide.Slide;
 
 import java.awt.Color;
@@ -8,13 +7,12 @@ import java.awt.Font;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Rectangle;
-import java.io.IOException;
 
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 
-/** <p>main.com.nhlstenden.JabberPoint.Presentation.Presentation.SlideViewerComponent is a graphical component that can show slides.</p>
+/** <p>SlideViewerComponent is a graphical component that can show slides.</p>
  * @author Ian F. Darwin, ian@darwinsys.com, Gert Florijn, Sylvia Stuurman
  * @version 1.1 2002/12/17 Gert Florijn
  * @version 1.2 2003/11/19 Sylvia Stuurman
@@ -97,29 +95,23 @@ public class SlideViewerComponent extends JComponent {
 			return;
 		}
 		this.presentation = presentation;
-		AnimationDecorator decorator = new AnimationDecorator(data);
-		try {
-			decorator.loadGif("logo-woordmerk_ou.gif");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		setSlide(decorator);
+		setSlide(data);
 		repaint();
 		getFrame().setTitle(presentation.getTitle());
 	}
 
 // draw the slide
-	public void paintComponent(Graphics g) {
-		g.setColor(BGCOLOR);
-		g.fillRect(0, 0, getSize().width, getSize().height);
+	public void paintComponent(Graphics graphics) {
+		graphics.setColor(BGCOLOR);
+		graphics.fillRect(0, 0, getSize().width, getSize().height);
 		if (getPresentation().getSlideNumber() < 0 || slide == null) {
 			return;
 		}
-		g.setFont(getLabelFont());
-		g.setColor(COLOR);
-		g.drawString("main.com.nhlstenden.JabberPoint.Slide.Slide " + (1 + getPresentation().getSlideNumber()) + " of " +
+		graphics.setFont(getLabelFont());
+		graphics.setColor(COLOR);
+		graphics.drawString("Slide " + (1 + getPresentation().getSlideNumber()) + " of " +
                  getPresentation().getSize(), XPOS, YPOS);
 		Rectangle area = new Rectangle(0, YPOS, getWidth(), (getHeight() - YPOS));
-		getSlide().draw(g, area, this);
+		getSlide().draw(graphics, area, this);
 	}
 }
