@@ -9,22 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Slide/BitmapItemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Slide/TextItemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/Accessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/Accessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/DemoPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/DemoPresentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Command/OpenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Command/OpenCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/BitmapItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/BitmapItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/SlideItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/SlideItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/TextItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/TextItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/XMLAccessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Accessors/XMLAccessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/.github/workflows/maven.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.github/workflows/super-linter.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/.github/workflows/super-linter.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

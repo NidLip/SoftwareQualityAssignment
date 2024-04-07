@@ -8,9 +8,9 @@ name: Lint Code Base
 
 on:
   push:
-    branches: [ "main", "dev", "mainRefactor"]
+    branches: [ "main", "dev", "tests", "acceptance"]
   pull_request:
-    branches: [ "main", "dev", "mainRefactor"]
+    branches: [ "main", "dev", "tests", "acceptance"]
 jobs:
   run-lint:
     runs-on: ubuntu-latest
