@@ -9,8 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/target/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/.github/workflows/maven.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.github/workflows/super-linter.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/.github/workflows/super-linter.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/SoftwareQualityAssignment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/x.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,12 +89,12 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JabberPoint">
+  <component name="RunManager" selected="JUnit.TextItemTest">
     <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.JabberPoint" />
-      <module name="JabberPoint" />
+      <module name="SoftwareQualityAssignment" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.nhlstenden.JabberPoint.*" />
@@ -154,38 +159,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextItemTest.testTextItem_compareLevelAndText_ThrowsIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JabberPoint" />
+    <configuration name="TextItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareQualityAssignment" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Slide.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
       <option name="PACKAGE_NAME" value="Slide" />
       <option name="MAIN_CLASS_NAME" value="Slide.TextItemTest" />
-      <option name="METHOD_NAME" value="testTextItem_compareLevelAndText_ThrowsIllegalArgumentException" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.JabberPoint" />
+      <item itemvalue="JUnit.TextItemTest" />
       <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_ThrowsFileNotFoundException" />
       <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_Invalid" />
       <item itemvalue="JUnit.MenuControllerTest.MenuController_withoutShortCut" />
-      <item itemvalue="JUnit.TextItemTest.testTextItem_compareLevelAndText_ThrowsIllegalArgumentException" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TextItemTest" />
         <item itemvalue="Application.JabberPoint" />
         <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_ThrowsFileNotFoundException" />
         <item itemvalue="JUnit.MenuControllerTest.MenuController_withoutShortCut" />
         <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_Invalid" />
-        <item itemvalue="JUnit.TextItemTest.testTextItem_compareLevelAndText_ThrowsIllegalArgumentException" />
       </list>
     </recent_temporary>
   </component>
@@ -205,6 +207,10 @@
       <workItem from="1712232820632" duration="71000" />
       <workItem from="1712232895360" duration="8703000" />
       <workItem from="1712404424383" duration="10324000" />
+      <workItem from="1712521125835" duration="242000" />
+      <workItem from="1712521373122" duration="40000" />
+      <workItem from="1712521423393" duration="88000" />
+      <workItem from="1712521514635" duration="421000" />
     </task>
     <servers />
   </component>
