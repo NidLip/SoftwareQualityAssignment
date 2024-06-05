@@ -7,17 +7,15 @@ import java.io.FileNotFoundException;
 
 public class BitmapItemFactory implements SlideItemFactory {
     @Override
-    public SlideItem createBitmapItem(int level, String text) {
-        try
-        {
-            return new BitmapItem(level, text);
-        } catch (FileNotFoundException e)
-        {
-            throw new RuntimeException(e);
+    public SlideItem createSlideItem(String type, int level, String text) {
+        if (type.equalsIgnoreCase("Bitmap")) {
+            try {
+                return new BitmapItem(level, text);
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            throw new UnsupportedOperationException("BitmapItemFactory can't create " + type);
         }
-    }
-    @Override
-    public SlideItem createTextItem(int level, String text) {
-        throw new UnsupportedOperationException("BitmapItemFactory can't create TextItem");
     }
 }
