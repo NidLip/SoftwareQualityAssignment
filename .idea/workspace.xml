@@ -9,13 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SoftwareQualityAssignment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/glass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/SlideItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/SlideItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/TextItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/TextItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +87,7 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TextItemTest">
+  <component name="RunManager" selected="Application.JabberPoint">
     <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -183,8 +181,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TextItemTest" />
         <item itemvalue="Application.JabberPoint" />
+        <item itemvalue="JUnit.TextItemTest" />
         <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_ThrowsFileNotFoundException" />
         <item itemvalue="JUnit.MenuControllerTest.MenuController_withoutShortCut" />
         <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_Invalid" />
@@ -211,6 +209,7 @@
       <workItem from="1712521373122" duration="40000" />
       <workItem from="1712521423393" duration="88000" />
       <workItem from="1712521514635" duration="421000" />
+      <workItem from="1717445828438" duration="8279000" />
     </task>
     <servers />
   </component>
