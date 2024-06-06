@@ -13,7 +13,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-
 /** <p>De klasse voor een Bitmap item</p>
  * <p>Bitmap items have the responsibility to draw themselves.</p>
  * @author Ian F. Darwin, ian@darwinsys.com, Gert Florijn, Sylvia Stuurman
@@ -23,17 +22,17 @@ import java.io.InputStream;
  * @version 1.4 2007/07/16 Sylvia Stuurman
  * @version 1.5 2010/03/03 Sylvia Stuurman
  * @version 1.6 2014/05/16 Sylvia Stuurman
-*/
+ */
 
 public class BitmapItem extends SlideItem {
-  private BufferedImage bufferedImage;
-  private String imageName;
-  
-  protected static final String FILE = "File ";
-  protected static final String NOTFOUND = " not found";
+	private BufferedImage bufferedImage;
+	private String imageName;
 
-// level is equal to item-level; name is the name of the file with the Image
-	public BitmapItem(int level, String name) throws FileNotFoundException{
+	protected static final String FILE = "File ";
+	protected static final String NOTFOUND = " not found";
+
+	// level is equal to item-level; name is the name of the file with the Image
+	public BitmapItem(int level, String name) throws FileNotFoundException {
 		super(level);
 		setName(name);
 		try {
@@ -48,7 +47,7 @@ public class BitmapItem extends SlideItem {
 		}
 	}
 
-// getters and setters
+	// getters and setters
 	public String getName() {
 		return this.imageName;
 	}
@@ -72,15 +71,15 @@ public class BitmapItem extends SlideItem {
 		return new Rectangle((int) (myStyle.getIndent() * scale), 0,
 				(int) (getBufferedImage().getWidth(observer) * scale),
 				((int) (myStyle.getLeading() * scale)) +
-				(int) (getBufferedImage().getHeight(observer) * scale));
+						(int) (getBufferedImage().getHeight(observer) * scale));
 	}
 
-// draw the image
+	// draw the image
 	public void draw(int x, int y, float scale, Graphics g, Style myStyle, ImageObserver observer) {
 		int width = x + (int) (myStyle.getIndent() * scale);
 		int height = y + (int) (myStyle.getLeading() * scale);
 		g.drawImage(getBufferedImage(), width, height,(int) (getBufferedImage().getWidth(observer)*scale),
-                (int) (getBufferedImage().getHeight(observer)*scale), observer);
+				(int) (getBufferedImage().getHeight(observer)*scale), observer);
 	}
 
 	public String toString() {

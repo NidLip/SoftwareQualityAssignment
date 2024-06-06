@@ -46,7 +46,10 @@ public class Slide {
 	}
 
 	public SlideItem getSlideItem(int number) {
-		return (SlideItem)items.elementAt(number);
+		if (number < 0 || number >= getSize()) {
+			return null;
+		}
+		return items.elementAt(number);
 	}
 
 	public Vector<SlideItem> getAllSlideItems() {
@@ -74,7 +77,7 @@ public class Slide {
 
 	private void drawSlideItems(Graphics graphics, Rectangle area, ImageObserver view, float scale, int y) {
 		for (int number=0; number<getSize(); number++) {
-			SlideItem slideItem = (SlideItem) getAllSlideItems().elementAt(number);
+			SlideItem slideItem = getAllSlideItems().elementAt(number);
 			Style style = Style.getStyle(slideItem.getLevel());
 			slideItem.draw(area.x, y, scale, graphics, style, view);
 			y += slideItem.getBoundingBox(graphics, view, scale, style).height;
