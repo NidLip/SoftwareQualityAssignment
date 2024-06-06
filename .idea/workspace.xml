@@ -9,10 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.github/workflows/acceptance.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.github/workflows/publish.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.github/workflows/testing.yml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/Presentation.java" afterDir="false" />
+>>>>>>> SingletonImplementation
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +97,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.JabberPoint" />
-      <module name="JabberPoint" />
+      <module name="SoftwareQualityAssignment" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.nhlstenden.JabberPoint.*" />
@@ -184,6 +191,7 @@
       <workItem from="1712232820632" duration="71000" />
       <workItem from="1712232895360" duration="8703000" />
       <workItem from="1712404424383" duration="10324000" />
+      <workItem from="1717677673963" duration="1237000" />
     </task>
     <servers />
   </component>
@@ -200,7 +208,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java</url>
-          <line>90</line>
+          <line>70</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

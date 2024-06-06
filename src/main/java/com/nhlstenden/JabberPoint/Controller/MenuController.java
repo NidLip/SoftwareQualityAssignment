@@ -1,7 +1,9 @@
 package com.nhlstenden.JabberPoint.Controller;
 
 import com.nhlstenden.JabberPoint.Accessor.Accessor;
+import com.nhlstenden.JabberPoint.Command.NextSlideCommand;
 import com.nhlstenden.JabberPoint.Command.OpenCommand;
+import com.nhlstenden.JabberPoint.Command.PrevSlideCommand;
 import com.nhlstenden.JabberPoint.Presentation.AboutBox;
 import com.nhlstenden.JabberPoint.Presentation.Presentation;
 import com.nhlstenden.JabberPoint.Accessor.XMLAccessor;
@@ -30,72 +32,55 @@ public class MenuController extends MenuBar {
 	
 	private Frame parent; // the frame, only used as parent for the Dialogs
 	private Presentation presentation; // Commands are given to the presentation
-	
-	private static final long serialVersionUID = 227L;
-	
-	protected static final String ABOUT = "About";
-	protected static final String FILE = "File";
-	protected static final String EXIT = "Exit";
-	protected static final String GOTO = "Go to";
-	protected static final String HELP = "Help";
-	protected static final String NEW = "New";
-	protected static final String NEXT = "Next";
-	protected static final String OPEN = "Open";
-	protected static final String PAGENR = "Page number?";
-	protected static final String PREV = "Prev";
-	protected static final String SAVE = "Save";
-	protected static final String VIEW = "View";
-	protected static final String SAVEFILE = "dump.xml";
-	protected static final String IOEX = "IO Exception: ";
-	protected static final String SAVEERR = "Save Error";
 
 	public MenuController(Frame frame, Presentation presentationObject) {
         parent = frame;
         presentation = presentationObject;
         OpenCommand openCommand = new OpenCommand(presentation, parent);
+		NextSlideCommand nextSlideCommand = new NextSlideCommand(presentation);
+		PrevSlideCommand prevSlideCommand = new PrevSlideCommand(presentation);
 
         MenuItem menuItem;
-        Menu fileMenu = new Menu(FILE);
-        fileMenu.add(menuItem = mkMenuItem(OPEN));
+        Menu fileMenu = new Menu("File");
+        fileMenu.add(menuItem = mkMenuItem("Open"));
         menuItem.addActionListener(actionEvent -> openCommand.execute());
-		fileMenu.add(menuItem = mkMenuItem(NEW));
-		menuItem.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent actionEvent) {
-				presentation.clear();
-				parent.repaint();
-			}
+		fileMenu.add(menuItem = mkMenuItem("Next"));
+		menuItem.addActionListener(actionEvent ->
+		{
+			presentation.clear();
+			parent.repaint();
 		});
 		
-		fileMenu.add(menuItem = mkMenuItem(SAVE));
+		fileMenu.add(menuItem = mkMenuItem("Save"));
 		menuItem.addActionListener(actionEvent ->
 		{
 			Accessor xmlAccessor = new XMLAccessor();
 			try {
-				xmlAccessor.saveFile(presentation, SAVEFILE);
+				xmlAccessor.saveFile(presentation, "dump.xml");
 			} catch (IOException exc) {
-				JOptionPane.showMessageDialog(parent, IOEX + exc,
-						SAVEERR, JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(parent, "IO Exception: " + exc,
+						"Save Error", JOptionPane.ERROR_MESSAGE);
 			}
 		});
 		fileMenu.addSeparator();
-		fileMenu.add(menuItem = mkMenuItem(EXIT));
+		fileMenu.add(menuItem = mkMenuItem("Exit"));
 		menuItem.addActionListener(actionEvent -> presentation.exit(0));
 		add(fileMenu);
-		Menu viewMenu = new Menu(VIEW);
-		viewMenu.add(menuItem = mkMenuItem(NEXT));
-		menuItem.addActionListener(actionEvent -> presentation.nextSlide());
-		viewMenu.add(menuItem = mkMenuItem(PREV));
-		menuItem.addActionListener(actionEvent -> presentation.prevSlide());
-		viewMenu.add(menuItem = mkMenuItem(GOTO));
+		Menu viewMenu = new Menu("View");
+		viewMenu.add(menuItem = mkMenuItem("Next"));
+		menuItem.addActionListener(actionEvent -> nextSlideCommand.execute());
+		viewMenu.add(menuItem = mkMenuItem("Previous"));
+		menuItem.addActionListener(actionEvent -> prevSlideCommand.execute());
+		viewMenu.add(menuItem = mkMenuItem("Go to"));
 		menuItem.addActionListener(actionEvent ->
 		{
-			String pageNumberStr = JOptionPane.showInputDialog(PAGENR);
+			String pageNumberStr = JOptionPane.showInputDialog("Page number?");
 			int pageNumber = Integer.parseInt(pageNumberStr);
 			presentation.setSlideNumber(pageNumber - 1);
 		});
 		add(viewMenu);
-		Menu helpMenu = new Menu(HELP);
-		helpMenu.add(menuItem = mkMenuItem(ABOUT));
+		Menu helpMenu = new Menu("Help");
+		helpMenu.add(menuItem = mkMenuItem("About"));
 		menuItem.addActionListener(actionEvent -> AboutBox.show(parent));
 		setHelpMenu(helpMenu);		// needed for portability (Motif, etc.).
 	}

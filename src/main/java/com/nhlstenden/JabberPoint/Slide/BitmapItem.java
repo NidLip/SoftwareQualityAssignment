@@ -33,9 +33,9 @@ public class BitmapItem extends SlideItem {
   protected static final String NOTFOUND = " not found";
 
 // level is equal to item-level; name is the name of the file with the Image
-	public BitmapItem(int level, String name) {
+	public BitmapItem(int level, String name) throws FileNotFoundException{
 		super(level);
-		imageName = name;
+		setName(name);
 		try {
 			InputStream in = getClass().getClassLoader().getResourceAsStream(imageName);
 			if (in == null) {
@@ -48,14 +48,9 @@ public class BitmapItem extends SlideItem {
 		}
 	}
 
-// An empty bitmap-item
-	public BitmapItem() {
-		this(0, null);
-	}
-
 // getters and setters
 	public String getName() {
-		return imageName;
+		return this.imageName;
 	}
 
 	public void setName(String name){
@@ -64,7 +59,7 @@ public class BitmapItem extends SlideItem {
 
 	public BufferedImage getBufferedImage()
 	{
-		return bufferedImage;
+		return this.bufferedImage;
 	}
 
 	public void setBufferedImage(BufferedImage bufferedImage)

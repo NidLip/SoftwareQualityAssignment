@@ -1,3 +1,4 @@
+package Accessors;
 
 import com.nhlstenden.JabberPoint.Accessor.XMLAccessor;
 import com.nhlstenden.JabberPoint.Factory.SlideItemFactory;
@@ -27,7 +28,7 @@ class XMLAccessorTest {
         String xml = "<presentation>" +
                 "<showtitle>Test Title</showtitle>" +
                 "<slide>" +
-                "<title>com.nhlstenden.JabberPoint.Slide.Slide Title</title>" +
+                "<title>Slide Title</title>" +
                 "<item level=\"1\" kind=\"text\">Item Text</item>" +
                 "</slide>" +
                 "</presentation>";
@@ -41,7 +42,7 @@ class XMLAccessorTest {
 
         assertEquals("Test Title", presentation.getTitle());
         assertEquals(1, presentation.getSize());
-        assertEquals("com.nhlstenden.JabberPoint.Slide.Slide Title", presentation.getSlide(0).getTitle());
+        assertEquals("Slide Title", presentation.getSlide(0).getTitle());
 
         tempFile.delete();
     }
@@ -119,7 +120,7 @@ class XMLAccessorTest {
         Presentation presentation = new Presentation();
         presentation.setTitle("Test Title");
         Slide slide = new Slide("text");
-        slide.setTitle("com.nhlstenden.JabberPoint.Slide.Slide Title");
+        slide.setTitle("Slide Title");
         presentation.append(slide);
 
         File tempFile = Files.createTempFile("test", ".xml").toFile();
@@ -128,7 +129,7 @@ class XMLAccessorTest {
 
         String content = new String(Files.readAllBytes(tempFile.toPath()));
         assertTrue(content.contains("Test Title"));
-        assertTrue(content.contains("com.nhlstenden.JabberPoint.Slide.Slide Title"));
+        assertTrue(content.contains("Slide Title"));
 
         tempFile.delete();
     }

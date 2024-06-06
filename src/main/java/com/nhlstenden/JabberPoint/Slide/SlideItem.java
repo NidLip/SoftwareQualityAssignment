@@ -24,7 +24,7 @@ public abstract class SlideItem {
 		if (lev < 0) {
 			throw new IllegalArgumentException("level can not be less then zero");
 		} else {
-			level = lev;
+			this.level = lev;
 		}
 	}
 
@@ -34,7 +34,7 @@ public abstract class SlideItem {
 
 // Give the level
 	public int getLevel() {
-		return level;
+		return this.level;
 	}
 
 	public void setLevel(int lev){
@@ -46,10 +46,10 @@ public abstract class SlideItem {
 	}
 
 // Give the bounding box
-	public abstract Rectangle getBoundingBox(Graphics g, 
+	public abstract Rectangle getBoundingBox(Graphics graphics,
 			ImageObserver observer, float scale, Style style);
 
 // Draw the item
 	public abstract void draw(int x, int y, float scale, 
-			Graphics g, Style style, ImageObserver observer);
+			Graphics graphics, Style style, ImageObserver observer);
 }

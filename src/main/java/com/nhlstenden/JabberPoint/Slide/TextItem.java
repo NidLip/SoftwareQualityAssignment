@@ -27,23 +27,21 @@ import java.util.ArrayList;
 
 public class TextItem extends SlideItem {
 	private String text;
-	
-	private static final String EMPTYTEXT = "No Text Given";
 
-// a textitem of level level, with the text string
+// a textitem of level, with the text string
 	public TextItem(int level, String string) {
 		super(level);
 		if (string == null || string.isEmpty()) {
-			text = EMPTYTEXT;
+			this.text = "No Text Given";
 		} else {
-			text = string;
+			this.text = string;
 		}
 	}
 
 
 // give the text
 	public String getText() {
-		return text == null ? "" : text;
+		return this.text == null ? "" : this.text;
 	}
 
 	public void setText(String textItem){
@@ -87,7 +85,7 @@ public AttributedString getAttributedString(Style style, float scale) {
 
 // draw the item
 	public void draw(int x, int y, float scale, Graphics graphics,
-			Style myStyle, ImageObserver o) {
+			Style myStyle, ImageObserver observer) {
 		if (text == null || text.length() == 0) {
 			return;
 		}
@@ -120,6 +118,6 @@ public AttributedString getAttributedString(Style style, float scale) {
 	}
 
 	public String toString() {
-		return "main.com.nhlstenden.JabberPoint.Slide.TextItem[" + getLevel()+","+getText()+"]";
+		return "TextItem[" + getLevel()+","+getText()+"]";
 	}
 }
