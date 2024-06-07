@@ -164,5 +164,8 @@ cmake-build-*/
 .idea/**/mongoSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/java,macos,windows,visualstudiocode,git
+<<<<<<< HEAD
 
 .idea/
+=======
+>>>>>>> 4b2f58bd91d24e7f04a31922373899f3bf8c4a1e
