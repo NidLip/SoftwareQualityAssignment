@@ -40,10 +40,10 @@ jobs:
           sourcePath: 'src/main/java'
           rulesets: 'rulesets/java/quickstart.xml,ruleset.xml'
 
-      - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: pmd-report.sarif
+#      - name: Upload SARIF file
+#        uses: github/codeql-action/upload-sarif@v2
+#        with:
+#          sarif_file: pmd-report.sarif
 
       - name: Generate Jacoco report
         run: mvn jacoco:report
