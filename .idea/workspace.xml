@@ -9,18 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JabberPoint.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JabberPoint.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/nhlstenden/Controller/MenuControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/JabberPoint/Controller/MenuControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/nhlstenden/Factory/BitmapItemFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/JabberPoint/Factory/BitmapItemFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/nhlstenden/Factory/TextItemFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/JabberPoint/Factory/TextItemFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/nhlstenden/Presentation/PresentationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/JabberPoint/Presentation/PresentationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/nhlstenden/Presentation/SlideViewerComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/JabberPoint/Presentation/SlideViewerComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/nhlstenden/Slide/BitmapItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/JabberPoint/Slide/BitmapItemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/nhlstenden/Slide/SlideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/JabberPoint/Slide/SlideTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/nhlstenden/Slide/TextItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/JabberPoint/Slide/TextItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +186,7 @@
       <workItem from="1712232895360" duration="8703000" />
       <workItem from="1712404424383" duration="10324000" />
       <workItem from="1717677673963" duration="1237000" />
-      <workItem from="1717788507309" duration="302000" />
+      <workItem from="1717788507309" duration="1211000" />
     </task>
     <servers />
   </component>
@@ -215,10 +205,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$test_in_JabberPoint.ic" NAME="test in JabberPoint Coverage Results" MODIFIED="1717788923204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$XMLAccessorTest_testLoadSlideItem.ic" NAME="XMLAccessorTest.testLoadSlideItem Coverage Results" MODIFIED="1712182063207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>main.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$_default_.ic" NAME="&lt;default&gt; Coverage Results" MODIFIED="1717788554066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$_default_.ic" NAME="&lt;default&gt; Coverage Results" MODIFIED="1717788809269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$All_in_SoftwareQualityAssignment.ic" NAME="All in SoftwareQualityAssignment Coverage Results" MODIFIED="1717699665614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -26,15 +26,6 @@ import org.w3c.dom.NodeList;
 
 public class XMLAccessor extends Accessor {
 
-	protected static final String SLIDETITLE = "title";
-	protected static final String SLIDE = "slide";
-	protected static final String ITEM = "item";
-	protected static final String LEVEL = "level";
-	protected static final String KIND = "kind";
-	protected static final String PCE = "Parser Configuration Exception";
-	protected static final String NFE = "Number Format Exception";
-
-
 	private String getTitle(Element element, String tagName) {
 		NodeList titles = element.getElementsByTagName(tagName);
 		if (titles.getLength() == 0) {
@@ -77,18 +68,15 @@ public class XMLAccessor extends Accessor {
 			presentation.setTitle(getTitle(doc, "showtitle"));
 			NodeList slides = doc.getElementsByTagName("slide");
 			parseSlides(presentation, slides);
-		}
-		catch (IOException iox) {
-			System.err.println(iox.toString());
-		}
-		catch (SAXException | IllegalArgumentException ex) {
+		} catch (IOException iox) {
+			System.err.println("IO Exception: " + iox.getMessage());
+		} catch (SAXException | IllegalArgumentException ex) {
 			JOptionPane.showMessageDialog(null,
-					"Error: " + ex, "Jabberpoint Error ",
+					"Error: " + ex, "Jabberpoint Error",
 					JOptionPane.ERROR_MESSAGE);
 			System.exit(1);
-		}
-		catch (ParserConfigurationException pcx) {
-			System.err.println(PCE);
+		} catch (ParserConfigurationException pcx) {
+			System.err.println("Parser Configuration Exception");
 		}
 	}
 
@@ -99,8 +87,8 @@ public class XMLAccessor extends Accessor {
 		if (leveltext != null) {
 			try {
 				level = Integer.parseInt(leveltext);
-			} catch(NumberFormatException x) {
-				System.err.println(NFE);
+			} catch (NumberFormatException x) {
+				System.err.println("Number Format Exception");
 			}
 		}
 		return level;
@@ -108,7 +96,7 @@ public class XMLAccessor extends Accessor {
 
 	private String parseType(Element item) {
 		NamedNodeMap attributes = item.getAttributes();
-		return attributes.getNamedItem(KIND).getTextContent();
+		return attributes.getNamedItem("kind").getTextContent();
 	}
 
 	public void loadSlideItem(Slide slide, Element item, SlideItemFactory factory) {
@@ -176,5 +164,10 @@ public class XMLAccessor extends Accessor {
 		writeTitle(out, presentation.getTitle());
 		writeSlides(out, presentation);
 		out.close();
+	}
+
+	@Override
+	public String toString() {
+		return "XMLAccessor: Responsible for loading and saving presentations in XML format.";
 	}
 }

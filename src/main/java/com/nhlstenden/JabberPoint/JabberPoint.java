@@ -25,7 +25,6 @@ import java.io.IOException;
  */
 
 public class JabberPoint {
-	protected static final String IOERR = "IO Error: ";
 	protected static final String JABERR = "Jabberpoint Error ";
 	protected static final String JABVERSION = "Jabberpoint 1.6 - OU version";
 
@@ -44,7 +43,7 @@ public class JabberPoint {
 			presentation.setSlideNumber(0);
 		} catch (IOException ex) {
 			JOptionPane.showMessageDialog(null,
-					IOERR + ex, JABERR,
+					"IO Error: " + ex, JABERR,
 					JOptionPane.ERROR_MESSAGE);
 		}
 	}
