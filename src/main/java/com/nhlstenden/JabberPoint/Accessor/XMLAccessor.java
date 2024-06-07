@@ -26,7 +26,6 @@ import org.w3c.dom.NodeList;
 
 public class XMLAccessor extends Accessor {
 
-	protected static final String SHOWTITLE = "showtitle";
 	protected static final String SLIDETITLE = "title";
 	protected static final String SLIDE = "slide";
 	protected static final String ITEM = "item";
@@ -55,9 +54,9 @@ public class XMLAccessor extends Accessor {
 			Element xmlSlide = (Element) slides.item(slideNumber);
 			SlideItemFactory factory = new TextItemFactory();
 			Slide slide = new Slide("text");
-			slide.setTitle(getTitle(xmlSlide, SLIDETITLE));
+			slide.setTitle(getTitle(xmlSlide, "title"));
 			presentation.append(slide);
-			NodeList slideItems = xmlSlide.getElementsByTagName(ITEM);
+			NodeList slideItems = xmlSlide.getElementsByTagName("item");
 			parseSlideItems(slide, slideItems, factory);
 		}
 	}
@@ -75,8 +74,8 @@ public class XMLAccessor extends Accessor {
 			DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 			Document document = builder.parse(new File(filename));
 			Element doc = document.getDocumentElement();
-			presentation.setTitle(getTitle(doc, SHOWTITLE));
-			NodeList slides = doc.getElementsByTagName(SLIDE);
+			presentation.setTitle(getTitle(doc, "showtitle"));
+			NodeList slides = doc.getElementsByTagName("slide");
 			parseSlides(presentation, slides);
 		}
 		catch (IOException iox) {
@@ -96,7 +95,7 @@ public class XMLAccessor extends Accessor {
 	private int parseLevel(Element item) {
 		int level = 1;
 		NamedNodeMap attributes = item.getAttributes();
-		String leveltext = attributes.getNamedItem(LEVEL).getTextContent();
+		String leveltext = attributes.getNamedItem("level").getTextContent();
 		if (leveltext != null) {
 			try {
 				level = Integer.parseInt(leveltext);

@@ -9,6 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.github/workflows/acceptance.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.github/workflows/publish.yml" afterDir="false" />
@@ -19,6 +20,19 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/Presentation.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/Presentation/SlideViewerComponentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/Presentation/SlideViewerFrameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Presentation/SlideViewerFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/BitmapItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/BitmapItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Accessors/XMLAccessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/Accessors/XMLAccessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Slide/BitmapItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/Slide/BitmapItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Slide/TextItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/nhlstenden/Slide/TextItemTest.java" afterDir="false" />
+>>>>>>> tests
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -87,14 +101,19 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.nhlstenden.JabberPoint" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="main" />
+      <recent name="com.nhlstenden.Controller" />
+      <recent name="com.nhlstenden.Factory" />
+      <recent name="com.nhlstenden.Slide" />
+      <recent name="com.nhlstenden.Presentation" />
+      <recent name="com.nhlstenden.JabberPoint.Presentation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JabberPoint">
-    <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+  <component name="RunManager" selected="JUnit.All in SoftwareQualityAssignment">
+    <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.JabberPoint" />
       <module name="SoftwareQualityAssignment" />
       <extension name="coverage">
@@ -107,70 +126,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMLAccessorTest.testLoadFile_loadPresentationWithNoSlides_expectThrows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in SoftwareQualityAssignment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareQualityAssignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.XMLAccessorTest" />
-      <option name="METHOD_NAME" value="testLoadFile_loadPresentationWithNoSlides_expectThrows" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMLAccessorTest.testLoadSlideItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SlideViewerComponentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareQualityAssignment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="com.nhlstenden.Presentation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.XMLAccessorTest" />
-      <option name="METHOD_NAME" value="testLoadSlideItem" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.nhlstenden.Presentation" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.Presentation.SlideViewerComponentTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.nhlstenden.JabberPoint.Accessor.* and 7 more" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JabberPoint" />
-      <option name="TEST_OBJECT" value="PATTERN" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="com.nhlstenden.JabberPoint.Accessor.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Command.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Controller.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Decorator.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Factory.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Presentation.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Resources.*" />
-        <pattern testClass="com.nhlstenden.JabberPoint.Slide.*" />
-      </patterns>
+    <configuration name="SlideViewerFrameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareQualityAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhlstenden.Presentation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.Presentation" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.Presentation.SlideViewerFrameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XMLAccessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareQualityAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhlstenden.Accessors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.Accessors" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.Accessors.XMLAccessorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.JabberPoint" />
-      <item itemvalue="JUnit.XMLAccessorTest.testLoadFile_loadPresentationWithNoSlides_expectThrows" />
-      <item itemvalue="JUnit.XMLAccessorTest.testLoadSlideItem" />
-      <item itemvalue="TestNG.com.nhlstenden.JabberPoint.Accessor.* and 7 more" />
+      <item itemvalue="JUnit.All in SoftwareQualityAssignment" />
+      <item itemvalue="JUnit.SlideViewerComponentTest" />
+      <item itemvalue="JUnit.SlideViewerFrameTest" />
+      <item itemvalue="JUnit.XMLAccessorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in SoftwareQualityAssignment" />
+        <item itemvalue="JUnit.XMLAccessorTest" />
+        <item itemvalue="JUnit.SlideViewerFrameTest" />
         <item itemvalue="Application.JabberPoint" />
-        <item itemvalue="Application.JabberPoint" />
-        <item itemvalue="TestNG.com.nhlstenden.JabberPoint.Accessor.* and 7 more" />
-        <item itemvalue="JUnit.XMLAccessorTest.testLoadSlideItem" />
-        <item itemvalue="JUnit.XMLAccessorTest.testLoadFile_loadPresentationWithNoSlides_expectThrows" />
+        <item itemvalue="JUnit.SlideViewerComponentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -201,13 +223,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java</url>
-          <line>70</line>
+          <line>73</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
@@ -217,5 +234,6 @@
     <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$XMLAccessorTest_testLoadSlideItem.ic" NAME="XMLAccessorTest.testLoadSlideItem Coverage Results" MODIFIED="1712182063207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>main.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$All_in_SoftwareQualityAssignment.ic" NAME="All in SoftwareQualityAssignment Coverage Results" MODIFIED="1717699665614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
