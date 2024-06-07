@@ -21,7 +21,7 @@ import java.io.IOException;
  * @version 1.3 2004/08/17 Sylvia Stuurman
  * @version 1.4 2007/07/16 Sylvia Stuurman
  * @version 1.5 2010/03/03 Sylvia Stuurman
- * @version 1.6 2014/05/16 Sylvia Stuurman
+ * @version 1.6 2014/05/16 Sylvia Stuurmans
  */
 
 public class JabberPoint {
