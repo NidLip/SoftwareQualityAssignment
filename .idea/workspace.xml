@@ -9,11 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03ea9e48-c99b-40e4-a0e9-49a92f4e96e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Accessor/XMLAccessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/BitmapItemFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/SlideItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/SlideItemFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/TextItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Factory/TextItemFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -82,17 +79,21 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.nhlstenden.JabberPoint" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.nhlstenden.JabberPoint.Slide" />
-      <recent name="main" />
+      <recent name="com.nhlstenden.Controller" />
+      <recent name="com.nhlstenden.Factory" />
+      <recent name="com.nhlstenden.Slide" />
+      <recent name="com.nhlstenden.Presentation" />
+      <recent name="com.nhlstenden.JabberPoint.Presentation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JabberPoint">
+  <component name="RunManager" selected="JUnit.test in JabberPoint">
     <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.JabberPoint" />
-      <module name="SoftwareQualityAssignment" />
+      <module name="JabberPoint" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.nhlstenden.JabberPoint.*" />
@@ -103,89 +104,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BitmapItemTest.testBitmapItem_CompareImage_Invalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JabberPointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JabberPoint" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Slide.*" />
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
-      <option name="PACKAGE_NAME" value="Slide" />
-      <option name="MAIN_CLASS_NAME" value="Slide.BitmapItemTest" />
-      <option name="METHOD_NAME" value="testBitmapItem_CompareImage_Invalid" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BitmapItemTest.testBitmapItem_CompareImage_ThrowsFileNotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JabberPoint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Slide.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
-      <option name="PACKAGE_NAME" value="Slide" />
-      <option name="MAIN_CLASS_NAME" value="Slide.BitmapItemTest" />
-      <option name="METHOD_NAME" value="testBitmapItem_CompareImage_ThrowsFileNotFoundException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MenuControllerTest.MenuController_withoutShortCut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JabberPoint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
-      <option name="PACKAGE_NAME" value="Controller" />
-      <option name="MAIN_CLASS_NAME" value="Controller.MenuControllerTest" />
-      <option name="METHOD_NAME" value="MenuController_withoutShortCut" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SoftwareQualityAssignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Slide.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Slide" />
-      <option name="MAIN_CLASS_NAME" value="Slide.TextItemTest" />
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.JabberPointTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuControllerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JabberPoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.Controller" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.Controller.MenuControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test in JabberPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JabberPoint" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JabberPoint" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.JabberPoint" />
-      <item itemvalue="JUnit.TextItemTest" />
-      <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_ThrowsFileNotFoundException" />
-      <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_Invalid" />
-      <item itemvalue="JUnit.MenuControllerTest.MenuController_withoutShortCut" />
+      <item itemvalue="JUnit.test in JabberPoint" />
+      <item itemvalue="JUnit.JabberPointTest" />
+      <item itemvalue="JUnit.MenuControllerTest (1)" />
+      <item itemvalue="TestNG.&lt;default&gt;" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.test in JabberPoint" />
+        <item itemvalue="JUnit.MenuControllerTest (1)" />
+        <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="Application.JabberPoint" />
-        <item itemvalue="JUnit.TextItemTest" />
-        <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_ThrowsFileNotFoundException" />
-        <item itemvalue="JUnit.MenuControllerTest.MenuController_withoutShortCut" />
-        <item itemvalue="JUnit.BitmapItemTest.testBitmapItem_CompareImage_Invalid" />
+        <item itemvalue="JUnit.JabberPointTest" />
       </list>
     </recent_temporary>
   </component>
@@ -205,20 +185,31 @@
       <workItem from="1712232820632" duration="71000" />
       <workItem from="1712232895360" duration="8703000" />
       <workItem from="1712404424383" duration="10324000" />
-      <workItem from="1712521125835" duration="242000" />
-      <workItem from="1712521373122" duration="40000" />
-      <workItem from="1712521423393" duration="88000" />
-      <workItem from="1712521514635" duration="421000" />
-      <workItem from="1717445828438" duration="8279000" />
+      <workItem from="1717677673963" duration="1237000" />
+      <workItem from="1717788507309" duration="2414000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/Slide/Slide.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$test_in_JabberPoint.ic" NAME="test in JabberPoint Coverage Results" MODIFIED="1717792387123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$XMLAccessorTest_testLoadSlideItem.ic" NAME="XMLAccessorTest.testLoadSlideItem Coverage Results" MODIFIED="1712182063207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>main.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$_default_.ic" NAME="&lt;default&gt; Coverage Results" MODIFIED="1717788809269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SoftwareQualityAssignment$All_in_SoftwareQualityAssignment.ic" NAME="All in SoftwareQualityAssignment Coverage Results" MODIFIED="1717699665614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

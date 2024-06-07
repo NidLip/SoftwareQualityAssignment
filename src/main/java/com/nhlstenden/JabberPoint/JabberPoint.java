@@ -25,15 +25,14 @@ import java.io.IOException;
  */
 
 public class JabberPoint {
-	protected static final String IOERR = "IO Error: ";
-	protected static final String JABERR = "Jabberpoint Error ";
+	/** Version of program */
 	protected static final String JABVERSION = "Jabberpoint 1.6 - OU version";
 
-	/** Het Main Programma */
+	/** Main program */
 	public static void main(String[] argv) {
 		
 		Style.createStyles();
-		Presentation presentation = new Presentation();
+		Presentation presentation = Presentation.getInstance();
 		new SlideViewerFrame(JABVERSION, presentation);
 		try {
 			if (argv.length == 0) { // een demo presentatie
@@ -44,7 +43,7 @@ public class JabberPoint {
 			presentation.setSlideNumber(0);
 		} catch (IOException ex) {
 			JOptionPane.showMessageDialog(null,
-					IOERR + ex, JABERR,
+					"IO Error: " + ex, "Jabberpoint Error ",
 					JOptionPane.ERROR_MESSAGE);
 		}
 	}
