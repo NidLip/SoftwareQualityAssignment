@@ -1,4 +1,4 @@
-package com.nhlstenden.Slide;
+package com.nhlstenden.JabberPoint.Slide;
 
 import com.nhlstenden.JabberPoint.Slide.TextItem;
 import com.nhlstenden.Style.Style;

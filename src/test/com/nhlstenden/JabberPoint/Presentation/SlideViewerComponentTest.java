@@ -1,4 +1,4 @@
-package com.nhlstenden.Presentation;
+package com.nhlstenden.JabberPoint.Presentation;
 
 import com.nhlstenden.JabberPoint.Presentation.Presentation;
 import com.nhlstenden.JabberPoint.Presentation.SlideViewerComponent;

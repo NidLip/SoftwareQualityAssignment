@@ -1,4 +1,4 @@
-package com.nhlstenden.Factory;
+package com.nhlstenden.JabberPoint.Factory;
 
 import com.nhlstenden.JabberPoint.Factory.BitmapItemFactory;
 import com.nhlstenden.JabberPoint.Slide.BitmapItem;

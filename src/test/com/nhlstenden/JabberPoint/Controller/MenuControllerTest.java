@@ -1,4 +1,4 @@
-package com.nhlstenden.Controller;
+package com.nhlstenden.JabberPoint.Controller;
 
 import com.nhlstenden.JabberPoint.Controller.MenuController;
 import com.nhlstenden.JabberPoint.Presentation.Presentation;
@@ -29,7 +29,7 @@ class MenuControllerTest {
 
         Menu fileMenu = menuController.getMenu(0);
         assertEquals("File", fileMenu.getLabel());
-        assertEquals(5, fileMenu.getItemCount()); // Open, Next, Save, Separator, Exit
+        assertEquals(4, fileMenu.getItemCount()); // Open, Save, Separator, Exit
 
         Menu viewMenu = menuController.getMenu(1);
         assertEquals("View", viewMenu.getLabel());
@@ -50,18 +50,9 @@ class MenuControllerTest {
     }
 
     @Test
-    void testNextMenuItem_HasActionListener() {
-        Menu fileMenu = menuController.getMenu(0);
-        MenuItem nextItem = fileMenu.getItem(1);
-        ActionListener[] listeners = nextItem.getActionListeners();
-        assertEquals(1, listeners.length);
-        assertTrue(listeners[0] instanceof ActionListener);
-    }
-
-    @Test
     void testSaveMenuItem_HasActionListener() {
         Menu fileMenu = menuController.getMenu(0);
-        MenuItem saveItem = fileMenu.getItem(2);
+        MenuItem saveItem = fileMenu.getItem(1);
         ActionListener[] listeners = saveItem.getActionListeners();
         assertEquals(1, listeners.length);
         assertTrue(listeners[0] instanceof ActionListener);
@@ -70,7 +61,7 @@ class MenuControllerTest {
     @Test
     void testExitMenuItem_HasActionListener() {
         Menu fileMenu = menuController.getMenu(0);
-        MenuItem exitItem = fileMenu.getItem(4);
+        MenuItem exitItem = fileMenu.getItem(3); // "Exit" is now at index 3
         ActionListener[] listeners = exitItem.getActionListeners();
         assertEquals(1, listeners.length);
         assertTrue(listeners[0] instanceof ActionListener);

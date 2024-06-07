@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="JabberPoint" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JabberPoint" target="20" />
       <module name="SoftwareQualityAssignment" target="21" />
     </bytecodeTargetLevel>
   </component>
